@@ -1,0 +1,12 @@
+// to convert an svg to base64
+
+open terminal
+> cd to folder of svg " cd images"
+> type "base64 -i happy.svg"
+> open README.md 
+> type:" data:image/svg+xml;base64,{encoded svg} "
+
+// To read a file and it's content
+
+first define fs_permission in "foundry.toml"
+type => fs_permissions = [{access = "read", path = "./images/"}]
